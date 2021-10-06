@@ -1,0 +1,7 @@
+<center>
+    <h1> PERPUSTAKAAN</h1>
+    {% if user.is_authenticated %}
+    <form action="{% url 'keluar' %}"><p>Halo, <strong>{{ user }}</strong> | <a href="{% url 'signup' %}" >Tambah User</a> | <a href="{% url 'keluar' %}">Keluar<a></p></form>
+    
+    {% endif %}
+</center>
